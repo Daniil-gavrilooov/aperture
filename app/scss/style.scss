@@ -10,6 +10,10 @@ body {
     color: $grey;
 }
 
+.lock{
+    overflow: hidden;
+}
+
 .container{
     max-width: 1190px;
     padding: 0 10px;
