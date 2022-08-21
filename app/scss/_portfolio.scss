@@ -70,3 +70,31 @@
         object-fit: cover;
     }
 }
+
+@media (max-width: 1200px) {
+    .portfolio{
+        &__item-text{
+            font-size: 10px;
+            line-height: 15px;
+            margin-bottom: 20px;
+        }
+    }
+}
+
+@media (max-width: 1000px) {
+    .portfolio{
+        &__content{
+            grid-template-columns: 1fr;
+            justify-items: center;
+        }
+
+    }
+}
+
+@media (max-width: 500px) {
+    .portfolio{
+        &__item-info{
+            left: 10px;
+        }
+    }
+}
