@@ -1,10 +1,17 @@
 @import "_vars";
 @import "_reset";
 @import "_mixing";
+@import "_header";
 
 body {
     font-family: "Poppins", sans-serif;
     font-size: 14px;
     line-height: 20px;
     color: $grey;
+}
+
+.container{
+    max-width: 1190px;
+    padding: 0 10px;
+    margin: 0 auto;
 }
