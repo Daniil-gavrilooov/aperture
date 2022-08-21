@@ -1,0 +1,26 @@
+.design {
+    height: 100vh;
+    background-image: url(../images/design__bg\ 1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+
+    &__content {
+        position: absolute;
+        content: "";
+        top: 50%;
+        right: 10%;
+    }
+
+    &__title {
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: $white;
+        margin-bottom: 5px;
+    }
+
+    &__text{
+        max-width: 298px;
+    }
+}

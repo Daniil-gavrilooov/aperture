@@ -3,6 +3,7 @@
 @import "_mixing";
 @import "_header";
 @import "_portfolio";
+@import "_design";
 
 body {
     font-family: "Poppins", sans-serif;
@@ -42,5 +43,62 @@ body {
         line-height: 20px;
         letter-spacing: 0.4px;
         color: $black;
+    }
+}
+
+.photo-description {
+    position: absolute;
+    content: "";
+    bottom: 5%;
+    right: 5%;
+
+    &__item {
+        font-size: 12px;
+        line-height: 12px;
+        color: $white;
+        position: relative;
+        &::before {
+            position: absolute;
+            content: "";
+            left: 0%;
+        }
+    }
+
+    &__list {
+        display: flex;
+        gap: 16px;
+
+        & .photo-description__item:nth-child(1) {
+            padding-left: 22px;
+            &::before {
+                width: 16px;
+                height: 16px;
+                background-image: url(../images/photo__description-icon\ 1.svg);
+            }
+        }
+        & .photo-description__item:nth-child(2) {
+            padding-left: 22px;
+            &::before {
+                width: 16px;
+                height: 16px;
+                background-image: url(../images/photo__description-icon\ 2.svg);
+            }
+        }
+        & .photo-description__item:nth-child(3) {
+            padding-left: 39px;
+            &::before {
+                width: 32px;
+                height: 16px;
+                background-image: url(../images/photo__description-icon\ 3.svg);
+            }
+        }
+        & .photo-description__item:nth-child(4) {
+            padding-left: 21px;
+            &::before {
+                width: 15px;
+                height: 16px;
+                background-image: url(../images/photo__description-icon\ 4.svg);
+            }
+        }
     }
 }
