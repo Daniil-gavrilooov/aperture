@@ -1,0 +1,36 @@
+.offer {
+    background-color: $black;
+    padding: 110px 0;
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    &__title {
+        font-size: 40px;
+        line-height: 42px;
+        color: $white;
+        max-width: 571px;
+        margin-bottom: 15px;
+    }
+
+    &__text {
+        font-size: 24px;
+        line-height: 30px;
+        margin-bottom: 12px;
+    }
+
+    & .section__btn{
+        max-width: 154px;
+    }
+}
+
+@media (max-width: 620px) {
+    .offer__title{
+        font-size: 30px;
+        line-height: 30px;
+    }
+}
