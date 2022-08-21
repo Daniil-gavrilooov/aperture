@@ -2,6 +2,7 @@
 @import "_reset";
 @import "_mixing";
 @import "_header";
+@import "_portfolio";
 
 body {
     font-family: "Poppins", sans-serif;
@@ -10,12 +11,36 @@ body {
     color: $grey;
 }
 
-.lock{
+.lock {
     overflow: hidden;
 }
 
-.container{
+.container {
     max-width: 1190px;
     padding: 0 10px;
     margin: 0 auto;
+}
+
+.section__btn {
+    padding: 10px 10px 10px 42px;
+    background-color: #fff;
+    border-radius: 14px;
+    max-width: 143px;
+    position: relative;
+    &::before{
+        position: absolute;
+        content: '';
+        width: 32px;
+        height: 32px;
+        left: 4px;
+        top: 4px;
+        background-image: url(../images/section__btn-icon.svg);
+    }
+
+    &-text {
+        font-size: 15px;
+        line-height: 20px;
+        letter-spacing: 0.4px;
+        color: $black;
+    }
 }
